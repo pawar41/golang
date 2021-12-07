@@ -43,3 +43,8 @@ jobs:
     # Run var.go file
     - name: var.go
       run: go run var/*.go
+
+
+    # Run if-else.go file
+    - name: if-else.go
+      run: go run if-else/*.go
