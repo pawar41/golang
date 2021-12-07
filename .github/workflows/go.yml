@@ -87,8 +87,8 @@ jobs:
         sudo go install
         cd $HOME/work/golang/golang
 
-        ls -a /opt/hostedtoolcache/go/1.17.4/
-      #x64/src/calculation
+        ls -a /opt/hostedtoolcache/go/1.17.4/x64/
+      #src/calculation
 
 
     # Run package.go file
