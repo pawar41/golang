@@ -2,5 +2,5 @@ name: 'Golang files'
 description: 'Put your golang filees below'
 
 runs:
-  - name: run hello.go
-    run: go run hello/hello.go
+  name: run hello.go
+  run: go run hello/hello.go
