@@ -90,5 +90,5 @@ jobs:
 
     # Run package.go file
     - name: package.go
-      run: go run package/*.go
+      run: go run package/package.go
 
