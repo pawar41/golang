@@ -77,8 +77,8 @@ jobs:
     - name: adding packages
       run: |
         sudo mkdir $GOPATH/src
-#mkdir /home/runner/go/src/calculation
-#cp package/calc* /home/runner/go/src/calculation/
-#cd /home/runner/go/src/calculation/
-#go install
+        sudo mkdir /home/runner/go/src/calculation
+      #cp package/calc* /home/runner/go/src/calculation/
+      #cd /home/runner/go/src/calculation/
+      #go install
 
