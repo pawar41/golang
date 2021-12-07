@@ -41,4 +41,4 @@ jobs:
         
     # Run build of the application
     - name: Run hello.go
-      run: go run {{ hello }}
+      run: go run ${{ hello }}
