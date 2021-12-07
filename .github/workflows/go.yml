@@ -62,4 +62,9 @@ jobs:
 
     # Run slice.go file
     - name: slice.go
-      run: go run slice/*.go
+      run: go run slice/slice.go
+
+
+    # Run slice-size.go file
+    - name: slice-size.go
+      run: go run slice/slice-size.go
