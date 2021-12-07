@@ -81,5 +81,6 @@ jobs:
         sudo cp -rf package/calc* $GOPATH/src/calculation/
         sudo su
         cd $GOPATH/src/calculation/
-        go install
+        pwd
+        sudo go install
 
