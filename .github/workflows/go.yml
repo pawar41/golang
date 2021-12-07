@@ -75,7 +75,8 @@ jobs:
       run: go run function/*.go
 
     - name: adding packages
-      run: mkdir /home/runner/go/src
-      run: mkdir /home/runner/go/src/calculation
-      run: cp package/calc* /home/runner/go/src/calculation/
+      run: |
+        mkdir /home/runner/go/src
+        mkdir /home/runner/go/src/calculation
+        cp package/calc* /home/runner/go/src/calculation/
 
