@@ -1,3 +1,6 @@
+hello : hello/hello.go
+
+
 name: Go_test
 
 on:
@@ -34,7 +37,7 @@ jobs:
       run: |
         go version
         go get -u golang.org/x/lint/golint
-
-    # Run projects in actions.yml file
-    - uses: ./
         
+    # Run build of the application
+    - name: Run hello.go
+      run: go run {{ hello }}
