@@ -74,13 +74,20 @@ jobs:
     - name: function.go
       run: go run function/*.go
 
-    - name: adding packages
+     # adding go package 
+    - name: adding go package "calculation"
       run: |
         sudo mkdir $GOPATH/src
         sudo mkdir $GOPATH/src/calculation
         sudo cp -rf package/calc* $GOPATH/src/calculation/
         sudo su
         pwd
+        echo $HOME
         cd $GOPATH/src/calculation/
         sudo go install
+
+
+    # Run package.go file
+    - name: package.go
+      run: go run package/*.go
 
