@@ -48,3 +48,8 @@ jobs:
     # Run if-else.go file
     - name: if-else.go
       run: go run if-else/*.go
+
+
+    # Run switch-case.go file
+    - name: switch-case.go
+      run: go run switch-case/*.go
