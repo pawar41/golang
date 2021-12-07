@@ -77,5 +77,6 @@ jobs:
     - name: path
       run: echo $PATH 
 
-    - name: path
-      run: pwd 
+    - name: path#2
+      run: ls -a /home/runner/go 
+
