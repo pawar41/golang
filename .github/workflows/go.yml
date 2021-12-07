@@ -79,4 +79,5 @@ jobs:
         mkdir /home/runner/go/src
         mkdir /home/runner/go/src/calculation
         cp package/calc* /home/runner/go/src/calculation/
+        go install /home/runner/go/src/calculation/
 
