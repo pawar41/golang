@@ -79,14 +79,16 @@ jobs:
       run: |
         sudo mkdir $GOPATH/src
         sudo mkdir $GOPATH/src/calculation
+
+        sudo mkdir $GOROOT/src/calculation
+
         sudo cp -rf package/calc* $GOPATH/src/calculation/
+        sudo cp -rf package/calc* $GOROOT/src/calculation/
+
         sudo su
-        pwd
-        echo $HOME
         cd $GOPATH/src/calculation/
         sudo go install
         
-        mkdir $GOROOT/src/calculation
         cd $GOROOT/src/calculation
         sudo go install
 
