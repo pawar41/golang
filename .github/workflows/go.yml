@@ -1,7 +1,3 @@
-env :
-  hello : hello/hello.go
-
-
 name: Go_test
 
 on:
@@ -41,4 +37,4 @@ jobs:
         
     # Run build of the application
     - name: Run hello.go
-      run: go run ${{ hello }}
+      run: go run hello/hello.go
