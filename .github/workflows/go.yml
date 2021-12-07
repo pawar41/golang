@@ -76,3 +76,6 @@ jobs:
 
     - name: path
       run: echo $PATH 
+
+    - name: path
+      run: pwd 
