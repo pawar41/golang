@@ -53,3 +53,8 @@ jobs:
     # Run switch-case.go file
     - name: switch-case.go
       run: go run switch-case/*.go
+
+
+    # Run array.go file
+    - name: array.go
+      run: go run array/*.go
