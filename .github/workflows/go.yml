@@ -68,3 +68,8 @@ jobs:
     # Run slice-size.go file
     - name: slice-size.go
       run: go run slice/slice-size.go
+
+
+    # Run function.go file
+    - name: function.go
+      run: go run function/*.go
