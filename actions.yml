@@ -1,0 +1,3 @@
+
+- name: run hello.go
+  run: go run hello/hello.go
