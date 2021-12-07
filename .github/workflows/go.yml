@@ -79,6 +79,6 @@ jobs:
         sudo mkdir $GOPATH/src
         sudo mkdir $GOPATH/src/calculation
         sudo cp -rf package/calc* $GOPATH/src/calculation/
-      #cd /home/runner/go/src/calculation/
-      #go install
+        sudo cd /home/runner/go/src/calculation/
+        sudo go install
 
