@@ -1,4 +1,5 @@
-hello : hello/hello.go
+env :
+  hello : hello/hello.go
 
 
 name: Go_test
