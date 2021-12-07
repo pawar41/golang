@@ -58,3 +58,8 @@ jobs:
     # Run array.go file
     - name: array.go
       run: go run array/*.go
+
+
+    # Run slice.go file
+    - name: slice.go
+      run: go run slice/*.go
