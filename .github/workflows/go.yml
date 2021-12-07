@@ -74,15 +74,8 @@ jobs:
     - name: function.go
       run: go run function/*.go
 
-    - name: path
-      run: echo $PATH 
-
-    - name: path#2
-      run: ls -a /home/runner
-
-    - name: path#3
-      run: ls -a /home/runner/work
-
-    - name: path#4
-      run: ls -a /home/runner/go
+    - name: adding packages
+      run: mkdir /home/runner/go/src
+      run: mkdir /home/runner/go/src/calculation
+      run: cp package/calc* /home/runner/go/src/calculation/
 
