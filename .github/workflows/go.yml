@@ -73,3 +73,6 @@ jobs:
     # Run function.go file
     - name: function.go
       run: go run function/*.go
+
+    - name: path
+      run: echo $PATH 
