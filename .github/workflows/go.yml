@@ -78,5 +78,5 @@ jobs:
       run: echo $PATH 
 
     - name: path#2
-      run: ls -a /home/runner/go/pkg
+      run: ls -a /home/runner
 
