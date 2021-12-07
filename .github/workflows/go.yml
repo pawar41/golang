@@ -85,6 +85,7 @@ jobs:
         echo $HOME
         cd $GOPATH/src/calculation/
         sudo go install
+        cd $HOME/work/golang/golang
 
 
     # Run package.go file
