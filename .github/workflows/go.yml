@@ -120,6 +120,6 @@ jobs:
       
 
 
-    # Run pointers-*.go file
-    - name: run pointers/pointers-*.go
-      run: go run pointers/pointers-*.go
+    # Run pointers-ast.go file
+    - name: run pointers/pointers-ast.go
+      run: go run pointers/pointers-ast.go
