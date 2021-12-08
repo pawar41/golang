@@ -135,3 +135,15 @@ jobs:
     # Run methods.go file
     - name: run methods/methods.go
       run: go run methods/methods.go
+      
+
+
+    # Run goroutines.go file
+    - name: run goroutines/goroutines.go
+      run: go run goroutines/goroutines.go
+      
+
+
+    # Run goroutines-disp.go file
+    - name: run goroutines/goroutines-disp.go
+      run: go run goroutines/goroutines-disp.go
