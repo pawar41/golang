@@ -114,9 +114,9 @@ jobs:
       
 
 
-    # Run pointers-&.go file
-    - name: run pointers/pointers-&.go
-      run: go run run pointers/pointers-&.go
+    # Run pointers.go file
+    - name: run pointers/pointers.go
+      run: go run run pointers/pointers.go
       
 
 
