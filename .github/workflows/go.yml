@@ -38,72 +38,72 @@ jobs:
     # run hello.go file
     - name: run hello/hello.go
       run: | 
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat hello/*.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run hello/*.go
 
         
     # run var.go file
     - name: run var/var.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat var/*.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run var/*.go
 
 
     # run if-else.go file
     - name: run if-else/if-else.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat if-else/*.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run if-else/*.go
 
 
     # run switch-case.go file
     - name: run switch-case/switch-case.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat switch-case/*.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run switch-case/*.go
 
 
     # run array.go file
     - name: run array/array.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat array/*.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run array/*.go
 
 
     # run slice.go file
     - name: run slice/slice.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat slice/slice.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run slice/slice.go
 
 
     # Run slice-size.go file
     - name: run slice/slice-size.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat slice/slice-size.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run slice/slice-size.go
 
 
     # Run function.go file
     - name: run function/function.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat function/*.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run function/*.go
 
      # adding go package 
@@ -131,9 +131,9 @@ jobs:
     # Run package.go file
     - name: run package/package.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat package/package.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run package/package.go
       
 
@@ -141,9 +141,9 @@ jobs:
     # Run defer.go file
     - name: run defer/defer.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat defer/defer.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run defer/defer.go
       
 
@@ -151,9 +151,9 @@ jobs:
     # Run stacking-defer.go file
     - name: run defer/stacking-defer.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat defer/stacking-defer.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run defer/stacking-defer.go
       
 
@@ -161,9 +161,9 @@ jobs:
     # Run pointers.go file
     - name: run pointers/pointers.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat pointers/pointers.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run pointers/pointers.go
       
 
@@ -171,9 +171,9 @@ jobs:
     # Run pointers-ast.go file
     - name: run pointers/pointers-ast.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat pointers/pointers-ast.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run pointers/pointers-ast.go
       
 
@@ -181,9 +181,9 @@ jobs:
     # Run structures.go file
     - name: run structures/structures.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat structures/structures.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run structures/structures.go
       
 
@@ -191,9 +191,9 @@ jobs:
     # Run methods.go file
     - name: run methods/methods.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat methods/methods.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run methods/methods.go
       
 
@@ -201,9 +201,9 @@ jobs:
     # Run goroutines.go file
     - name: run goroutines/goroutines.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat goroutines/goroutines.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run goroutines/goroutines.go
       
 
@@ -211,9 +211,9 @@ jobs:
     # Run goroutines-disp.go file
     - name: run goroutines/goroutines-disp.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat goroutines/goroutines-disp.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run goroutines/goroutines-disp.go
       
 
@@ -221,9 +221,9 @@ jobs:
     # Run channels.go file
     - name: run channels/channels.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat channels/channels.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run channels/channels.go
       
 
@@ -231,9 +231,9 @@ jobs:
     # Run channels-channels.go file
     - name: run channels/channels-goroutines.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat channels/channels-goroutines.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run channels/channels-goroutines.go
       
 
@@ -241,9 +241,9 @@ jobs:
     # Run select.go file
     - name: run select/select.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat select/select.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run select/select.go
       
 
@@ -251,9 +251,9 @@ jobs:
     # Run select-default.go file
     - name: run select/select-default.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat select/select-default.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run select/select-default.go
       
 
@@ -261,9 +261,9 @@ jobs:
     # Run mutex.go file
     - name: run mutex/mutex.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat mutex/mutex.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run mutex/mutex.go
       
 
@@ -271,7 +271,7 @@ jobs:
     # Run mutex-goroutines.go file
     - name: run mutex/mutex-goroutines.go
       run: |
-        echo "file input"
+        echo -e "\n\n\n file input \n\n\n"
         cat mutex/mutex-goroutines.go
-        echo "file output"
+        echo -e "\n\n\n file output \n\n\n"
         go run mutex/mutex-goroutines.go
