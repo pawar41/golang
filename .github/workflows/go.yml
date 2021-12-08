@@ -46,7 +46,7 @@ jobs:
       # adding go package 
       - name: Install GO package
         run: |
-          mkdir -v /home/runner/go/src /home/runner/go/src/calculation $GOROOT/src/calculation /usr/lib/go-1.13 /usr/lib/go-1.13/src /usr/lib/go-1.13/src/calculation
+          sudo mkdir -v /home/runner/go/src /home/runner/go/src/calculation $GOROOT/src/calculation /usr/lib/go-1.13 /usr/lib/go-1.13/src /usr/lib/go-1.13/src/calculation
           
           sudo cp -rfv package/calc* /home/runner/go/src/calculation/
           sudo cp -rfv package/calc* $GOROOT/src/calculation/
