@@ -42,18 +42,18 @@ jobs:
 
 
     - name: Error solving tests
-      run: echo $GOPATH
+      run: ls -a $GOPATH
 
      # adding go package 
     - name: Install GO package
       run: |
-        mkdir -v $GOPATH/src $GOPATH/src/calculation $GOROOT/src/calculation;
+        mkdir -v /home/runner/go/src /home/runner/go/src/calculation $GOROOT/src/calculation;
         
-        sudo cp -rf package/calc* $GOPATH/src/calculation/
+        sudo cp -rf package/calc* /home/runner/go/src/calculation/
         sudo cp -rf package/calc* $GOROOT/src/calculation/
 
         sudo su
-        cd $GOPATH/src/calculation/
+        cd /home/runner/go/src/calculation/
         sudo go install
 
         cd $GOROOT/src/calculation
