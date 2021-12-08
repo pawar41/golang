@@ -116,7 +116,7 @@ jobs:
 
     # Run pointers.go file
     - name: run pointers/pointers.go
-      run: go run run pointers/pointers.go
+      run: go run pointers/pointers.go
       
 
 
@@ -129,3 +129,9 @@ jobs:
     # Run structures.go file
     - name: run structures/structures.go
       run: go run structures/structures.go
+      
+
+
+    # Run methods.go file
+    - name: run methods/methods.go
+      run: go run methods/methods.go
