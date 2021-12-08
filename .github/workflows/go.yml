@@ -42,8 +42,8 @@ jobs:
 
      # adding go package 
     - name: Install GO package
-      run: sudo ./bash_scripts/go-package.sh
+      run: ./bash_scripts/go-package.sh
     
       # adding go package 
     - name: Go Programs Input-output
-      run: sudo ./bash_scripts/print.sh
+      run: ./bash_scripts/print.sh
