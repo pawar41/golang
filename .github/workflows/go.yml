@@ -99,4 +99,10 @@ jobs:
     # Run package.go file
     - name: package.go
       run: go run package/package.go
+      
+
+
+    # Run defer.go file
+    - name: defer.go
+      run: go run defer/defer.go
 
