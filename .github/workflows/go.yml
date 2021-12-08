@@ -35,43 +35,52 @@ jobs:
         go version
         go get -u golang.org/x/lint/golint
         
+    # input hello.go file
+    - name: input hello/hello.go
+      run: cat hello/*.go
+        
     # Run hello.go file
-    - name: Run hello/hello.go
+    - name: output hello/hello.go
       run: go run hello/*.go
 
         
+    # input var.go file
+    - name: input var/var.go
+      run: cat var/*.go
+
+        
     # Run var.go file
-    - name: Run var/var.go
+    - name: output var/var.go
       run: go run var/*.go
 
 
     # Run if-else.go file
-    - name: run if-else/if-else.go
+    - name: output if-else/if-else.go
       run: go run if-else/*.go
 
 
     # Run switch-case.go file
-    - name: run switch-case/switch-case.go
+    - name: output switch-case/switch-case.go
       run: go run switch-case/*.go
 
 
     # Run array.go file
-    - name: run array/array.go
+    - name: output array/array.go
       run: go run array/*.go
 
 
     # Run slice.go file
-    - name: run slice/slice.go
+    - name: output slice/slice.go
       run: go run slice/slice.go
 
 
     # Run slice-size.go file
-    - name: run slice/slice-size.go
+    - name: output slice/slice-size.go
       run: go run slice/slice-size.go
 
 
     # Run function.go file
-    - name: run function/function.go
+    - name: output function/function.go
       run: go run function/*.go
 
      # adding go package 
@@ -97,89 +106,89 @@ jobs:
 
 
     # Run package.go file
-    - name: run package/package.go
+    - name: output package/package.go
       run: go run package/package.go
       
 
 
     # Run defer.go file
-    - name: run defer/defer.go
+    - name: output defer/defer.go
       run: go run defer/defer.go
       
 
 
     # Run stacking-defer.go file
-    - name: run defer/stacking-defer.go
+    - name: output defer/stacking-defer.go
       run: go run defer/stacking-defer.go
       
 
 
     # Run pointers.go file
-    - name: run pointers/pointers.go
+    - name: output pointers/pointers.go
       run: go run pointers/pointers.go
       
 
 
     # Run pointers-ast.go file
-    - name: run pointers/pointers-ast.go
+    - name: output pointers/pointers-ast.go
       run: go run pointers/pointers-ast.go
       
 
 
     # Run structures.go file
-    - name: run structures/structures.go
+    - name: output structures/structures.go
       run: go run structures/structures.go
       
 
 
     # Run methods.go file
-    - name: run methods/methods.go
+    - name: output methods/methods.go
       run: go run methods/methods.go
       
 
 
     # Run goroutines.go file
-    - name: run goroutines/goroutines.go
+    - name: output goroutines/goroutines.go
       run: go run goroutines/goroutines.go
       
 
 
     # Run goroutines-disp.go file
-    - name: run goroutines/goroutines-disp.go
+    - name: output goroutines/goroutines-disp.go
       run: go run goroutines/goroutines-disp.go
       
 
 
     # Run channels.go file
-    - name: run channels/channels.go
+    - name: output channels/channels.go
       run: go run channels/channels.go
       
 
 
     # Run channels-channels.go file
-    - name: run channels/channels-goroutines.go
+    - name: output channels/channels-goroutines.go
       run: go run channels/channels-goroutines.go
       
 
 
     # Run select.go file
-    - name: run select/select.go
+    - name: output select/select.go
       run: go run select/select.go
       
 
 
     # Run select-default.go file
-    - name: run select/select-default.go
+    - name: output select/select-default.go
       run: go run select/select-default.go
       
 
 
     # Run mutex.go file
-    - name: run mutex/mutex.go
+    - name: output mutex/mutex.go
       run: go run mutex/mutex.go
       
 
 
     # Run mutex-goroutines.go file
-    - name: run mutex/mutex-goroutines.go
+    - name: output mutex/mutex-goroutines.go
       run: go run mutex/mutex-goroutines.go
