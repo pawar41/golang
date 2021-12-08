@@ -41,10 +41,11 @@ jobs:
         export PATH_GO
 
 
-    - name: Error solvinf tests
-      run: |
-        echo $GOPATH
-        sudo echo $GOPATH
+    - name: Error solving tests
+      run: echo $GOPATH
+    
+    - name: Error solving tests
+      run: sudo echo $GOPATH
 
      # adding go package 
     - name: Install GO package
