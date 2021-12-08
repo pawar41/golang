@@ -38,8 +38,8 @@ jobs:
     # input hello.go file
     - name: run hello/hello.go
       run: |
-      cat hello/*.go
-      go run hello/*.go
+        cat hello/*.go
+        go run hello/*.go
 
         
     # input var.go file
