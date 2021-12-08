@@ -40,11 +40,16 @@ jobs:
         PATH_GO=$HOME/work/golang/golang
         export PATH_GO
 
+
+    - name: Error solvinf tests
+      run: echo $GOPATH
+
+
      # adding go package 
     - name: Install GO package
       run: |
         sudo mkdir -v $GOPATH/src $GOPATH/src/calculation $GOROOT/src/calculation
-
+        
         sudo cp -rf package/calc* $GOPATH/src/calculation/
         sudo cp -rf package/calc* $GOROOT/src/calculation/
 
