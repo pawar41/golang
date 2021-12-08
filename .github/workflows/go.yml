@@ -123,3 +123,9 @@ jobs:
     # Run pointers-ast.go file
     - name: run pointers/pointers-ast.go
       run: go run pointers/pointers-ast.go
+      
+
+
+    # Run structures.go file
+    - name: run structures/structures.go
+      run: go run structures/structures.go
