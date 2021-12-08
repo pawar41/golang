@@ -31,14 +31,7 @@ jobs:
 
       # Install all the dependencies
       - name: Install dependencies
-        run: |
-          go version
-          go get -u golang.org/x/lint/golint
-          
-      - name: Install Dependencies
-        run: |
-          PATH_GO=$HOME/work/golang/golang
-          export PATH_GO
+        run: go version
 
       # adding go package 
       - name: Install GO package
