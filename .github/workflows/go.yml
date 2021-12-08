@@ -36,46 +36,46 @@ jobs:
         go get -u golang.org/x/lint/golint
         
     # Run hello.go file
-    - name: hello.go
+    - name: Run hello/hello.go
       run: go run hello/*.go
 
         
     # Run var.go file
-    - name: var.go
+    - name: Run var/var.go
       run: go run var/*.go
 
 
     # Run if-else.go file
-    - name: if-else.go
+    - name: run if-else/if-else.go
       run: go run if-else/*.go
 
 
     # Run switch-case.go file
-    - name: switch-case.go
+    - name: run switch-case/switch-case.go
       run: go run switch-case/*.go
 
 
     # Run array.go file
-    - name: array.go
+    - name: run array/array.go
       run: go run array/*.go
 
 
     # Run slice.go file
-    - name: slice.go
+    - name: run slice/slice.go
       run: go run slice/slice.go
 
 
     # Run slice-size.go file
-    - name: slice-size.go
+    - name: run slice/slice-size.go
       run: go run slice/slice-size.go
 
 
     # Run function.go file
-    - name: function.go
+    - name: run function/function.go
       run: go run function/*.go
 
      # adding go package 
-    - name: adding go package "calculation"
+    - name: 'adding go package: "calculation"'
       run: |
         sudo mkdir $GOPATH/src
         sudo mkdir $GOPATH/src/calculation
@@ -97,12 +97,18 @@ jobs:
 
 
     # Run package.go file
-    - name: package.go
+    - name: run package/package.go
       run: go run package/package.go
       
 
 
     # Run defer.go file
-    - name: defer.go
+    - name: run defer/defer.go
       run: go run defer/defer.go
+      
+
+
+    # Run defer.go file
+    - name: run defer/stacking-defer.go
+      run: go run defer/stacking-defer.go
 
