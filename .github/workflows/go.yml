@@ -35,51 +35,76 @@ jobs:
         go version
         go get -u golang.org/x/lint/golint
         
-    # input hello.go file
+    # run hello.go file
     - name: run hello/hello.go
-      run: |
+      run: | 
+        echo "file input"
         cat hello/*.go
+        echo "file output"
         go run hello/*.go
 
         
-    # input var.go file
-    - name: input var/var.go
-      run: cat var/*.go
-
-        
-    # Run var.go file
-    - name: output var/var.go
-      run: go run var/*.go
-
-
-    # Run if-else.go file
-    - name: output if-else/if-else.go
-      run: go run if-else/*.go
+    # run var.go file
+    - name: run var/var.go
+      run: |
+        echo "file input"
+        cat var/*.go
+        echo "file output"
+        go run var/*.go
 
 
-    # Run switch-case.go file
-    - name: output switch-case/switch-case.go
-      run: go run switch-case/*.go
+    # run if-else.go file
+    - name: run if-else/if-else.go
+      run: |
+        echo "file input"
+        cat if-else/*.go
+        echo "file output"
+        go run if-else/*.go
 
 
-    # Run array.go file
-    - name: output array/array.go
-      run: go run array/*.go
+    # run switch-case.go file
+    - name: run switch-case/switch-case.go
+      run: |
+        echo "file input"
+        cat switch-case/*.go
+        echo "file output"
+        go run switch-case/*.go
 
 
-    # Run slice.go file
-    - name: output slice/slice.go
-      run: go run slice/slice.go
+    # run array.go file
+    - name: run array/array.go
+      run: |
+        echo "file input"
+        cat array/*.go
+        echo "file output"
+        go run array/*.go
+
+
+    # run slice.go file
+    - name: run slice/slice.go
+      run: |
+        echo "file input"
+        cat slice/slice.go
+        echo "file output"
+        go run slice/slice.go
 
 
     # Run slice-size.go file
-    - name: output slice/slice-size.go
-      run: go run slice/slice-size.go
+    - name: run slice/slice-size.go
+      run: |
+        echo "file input"
+        cat slice/slice-size.go
+        echo "file output"
+        go run slice/slice-size.go
 
 
     # Run function.go file
-    - name: output function/function.go
-      run: go run function/*.go
+    - name: run function/function.go
+      run: |
+        echo "file input"
+        cat function/*.go
+        echo "file output"
+        go run function/*.go
 
      # adding go package 
     - name: 'adding go package: "calculation"'
@@ -104,89 +129,149 @@ jobs:
 
 
     # Run package.go file
-    - name: output package/package.go
-      run: go run package/package.go
+    - name: run package/package.go
+      run: |
+        echo "file input"
+        cat package/package.go
+        echo "file output"
+        go run package/package.go
       
 
 
     # Run defer.go file
-    - name: output defer/defer.go
-      run: go run defer/defer.go
+    - name: run defer/defer.go
+      run: |
+        echo "file input"
+        cat defer/defer.go
+        echo "file output"
+        go run defer/defer.go
       
 
 
     # Run stacking-defer.go file
-    - name: output defer/stacking-defer.go
-      run: go run defer/stacking-defer.go
+    - name: run defer/stacking-defer.go
+      run: |
+        echo "file input"
+        cat defer/stacking-defer.go
+        echo "file output"
+        go run defer/stacking-defer.go
       
 
 
     # Run pointers.go file
-    - name: output pointers/pointers.go
-      run: go run pointers/pointers.go
+    - name: run pointers/pointers.go
+      run: |
+        echo "file input"
+        cat pointers/pointers.go
+        echo "file output"
+        go run pointers/pointers.go
       
 
 
     # Run pointers-ast.go file
-    - name: output pointers/pointers-ast.go
-      run: go run pointers/pointers-ast.go
+    - name: run pointers/pointers-ast.go
+      run: |
+        echo "file input"
+        cat pointers/pointers-ast.go
+        echo "file output"
+        go run pointers/pointers-ast.go
       
 
 
     # Run structures.go file
-    - name: output structures/structures.go
-      run: go run structures/structures.go
+    - name: run structures/structures.go
+      run: |
+        echo "file input"
+        cat structures/structures.go
+        echo "file output"
+        go run structures/structures.go
       
 
 
     # Run methods.go file
-    - name: output methods/methods.go
-      run: go run methods/methods.go
+    - name: run methods/methods.go
+      run: |
+        echo "file input"
+        cat methods/methods.go
+        echo "file output"
+        go run methods/methods.go
       
 
 
     # Run goroutines.go file
-    - name: output goroutines/goroutines.go
-      run: go run goroutines/goroutines.go
+    - name: run goroutines/goroutines.go
+      run: |
+        echo "file input"
+        cat goroutines/goroutines.go
+        echo "file output"
+        go run goroutines/goroutines.go
       
 
 
     # Run goroutines-disp.go file
-    - name: output goroutines/goroutines-disp.go
-      run: go run goroutines/goroutines-disp.go
+    - name: run goroutines/goroutines-disp.go
+      run: |
+        echo "file input"
+        cat goroutines/goroutines-disp.go
+        echo "file output"
+        go run goroutines/goroutines-disp.go
       
 
 
     # Run channels.go file
-    - name: output channels/channels.go
-      run: go run channels/channels.go
+    - name: run channels/channels.go
+      run: |
+        echo "file input"
+        cat channels/channels.go
+        echo "file output"
+        go run channels/channels.go
       
 
 
     # Run channels-channels.go file
-    - name: output channels/channels-goroutines.go
-      run: go run channels/channels-goroutines.go
+    - name: run channels/channels-goroutines.go
+      run: |
+        echo "file input"
+        cat channels/channels-goroutines.go
+        echo "file output"
+        go run channels/channels-goroutines.go
       
 
 
     # Run select.go file
-    - name: output select/select.go
-      run: go run select/select.go
+    - name: run select/select.go
+      run: |
+        echo "file input"
+        cat select/select.go
+        echo "file output"
+        go run select/select.go
       
 
 
     # Run select-default.go file
-    - name: output select/select-default.go
-      run: go run select/select-default.go
+    - name: run select/select-default.go
+      run: |
+        echo "file input"
+        cat select/select-default.go
+        echo "file output"
+        go run select/select-default.go
       
 
 
     # Run mutex.go file
-    - name: output mutex/mutex.go
-      run: go run mutex/mutex.go
+    - name: run mutex/mutex.go
+      run: |
+        echo "file input"
+        cat mutex/mutex.go
+        echo "file output"
+        go run mutex/mutex.go
       
 
 
     # Run mutex-goroutines.go file
-    - name: output mutex/mutex-goroutines.go
-      run: go run mutex/mutex-goroutines.go
+    - name: run mutex/mutex-goroutines.go
+      run: |
+        echo "file input"
+        cat mutex/mutex-goroutines.go
+        echo "file output"
+        go run mutex/mutex-goroutines.go
