@@ -36,12 +36,10 @@ jobs:
         go get -u golang.org/x/lint/golint
         
     # input hello.go file
-    - name: input hello/hello.go
-      run: cat hello/*.go
-        
-    # Run hello.go file
-    - name: output hello/hello.go
-      run: go run hello/*.go
+    - name: run hello/hello.go
+      run: |
+      cat hello/*.go
+      go run hello/*.go
 
         
     # input var.go file
