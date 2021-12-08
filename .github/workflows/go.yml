@@ -37,9 +37,9 @@ jobs:
         
     # run hello.go file
     - name: run hello/hello.go
-      uses: ./
-        with: 
-          run: $PATH_GO=$HOME/work/golang/golang/hello/hello.go
+      run: $PATH_GO=$HOME/work/golang/golang/hello/hello.go
+      uses: ./ 
+          
 
         
     # run var.go file
