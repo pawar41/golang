@@ -53,13 +53,7 @@ jobs:
             
             cd $HOME/work/golang/golang
       
-        # adding go package 
-      - name: GO package mod
-        run: go mod init
 
-        # adding go package 
-      - name: GO package test
-        run: go list
         
         # adding go package 
       - name: Go Programs Input-output
