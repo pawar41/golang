@@ -43,13 +43,13 @@ jobs:
       # adding go package 
       - name: Install GO package
         run: |
-            sudo mkdir $GOPATH/src
-            sudo mkdir $GOPATH/src/calculation
+            sudo mkdir -v $GOPATH/src
+            sudo mkdir -v $GOPATH/src/calculation
             
-            sudo mkdir $GOROOT/src/calculation
+            sudo mkdir -v $GOROOT/src/calculation
             
-            sudo cp -rf package/calc* $GOPATH/src/calculation/
-            sudo cp -rf package/calc* $GOROOT/src/calculation/
+            sudo cp -rfv package/calc* $GOPATH/src/calculation/
+            sudo cp -rfv package/calc* $GOROOT/src/calculation/
             
             sudo su
             cd $GOPATH/src/calculation/
