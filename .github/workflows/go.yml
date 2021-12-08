@@ -171,3 +171,15 @@ jobs:
     # Run select-default.go file
     - name: run select/select-default.go
       run: go run select/select-default.go
+      
+
+
+    # Run mutex.go file
+    - name: run mutex/mutex.go
+      run: go run mutex/mutex.go
+      
+
+
+    # Run mutex-goroutines.go file
+    - name: run mutex/mutex-goroutines.go
+      run: go run mutex/mutex-goroutines.go
