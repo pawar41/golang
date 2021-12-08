@@ -45,12 +45,15 @@ jobs:
       run: echo $GOPATH
     
     - name: Error solving tests
-      run: sudo echo $GOPATH
+      run: sudo GOPATH_SU=$GOPATH
+    
+    - name: Error solving tests
+      run: echo $GOPATH_SU
 
      # adding go package 
     - name: Install GO package
       run: |
-        sudo mkdir -v $GOPATH/src $GOPATH/src/calculation $GOROOT/src/calculation
+        sudo mkdir -v $GOPATH/src; $GOPATH/src/calculation; $GOROOT/src/calculation;
         
         sudo cp -rf package/calc* $GOPATH/src/calculation/
         sudo cp -rf package/calc* $GOROOT/src/calculation/
