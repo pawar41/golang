@@ -40,32 +40,25 @@ jobs:
           PATH_GO=$HOME/work/golang/golang
           export PATH_GO
 
-      - name: Error solving tests
-        run: echo $GROOT
-
       # adding go package 
       - name: Install GO package
         run: |
-          sudo mkdir -v /home/runner/go/src /home/runner/go/src/calculation $GOROOT/src/calculation /usr/lib/go-1.13 /usr/lib/go-1.13/src /usr/lib/go-1.13/src/calculation
-          
-          sudo cp -rfv package/calc* /home/runner/go/src/calculation/
-          sudo cp -rfv package/calc* $GOROOT/src/calculation/
-          sudo cp -rfv package/calc* /usr/lib/go-1.13/src/calculation
-
-          sudo su
-          cd /home/runner/go/src/calculation/
-          sudo go install
-          go install
-          
-          cd /usr/lib/go-1.13/src/calculation
-          sudo go install
-          go install
-
-          cd $GOROOT/src/calculation
-          sudo go install
-          go install
-
-          cd $HOME/work/golang/golang
+            sudo mkdir $GOPATH/src
+            sudo mkdir $GOPATH/src/calculation
+            
+            sudo mkdir $GOROOT/src/calculation
+            
+            sudo cp -rf package/calc* $GOPATH/src/calculation/
+            sudo cp -rf package/calc* $GOROOT/src/calculation/
+            
+            sudo su
+            cd $GOPATH/src/calculation/
+            sudo go install
+            
+            cd $GOROOT/src/calculation
+            sudo go install
+            
+            cd $HOME/work/golang/golang
       
         # adding go package 
       - name: Go Programs Input-output
@@ -86,7 +79,7 @@ jobs:
             cat ${PATH_GOF[ $i ]}
             echo -e "\n\n\n ========================================== FILE OUTPUT ==========================================  \n\n\n"
                   
-            sudo go run ${PATH_GOF[ $i ]}
+            go run ${PATH_GOF[ $i ]}
           }
 
 
