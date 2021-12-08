@@ -41,7 +41,7 @@ jobs:
           export PATH_GO
 
       - name: Error solving tests
-        run: ls -a $GOPATH
+        run: echo $GROOT
 
       # adding go package 
       - name: Install GO package
