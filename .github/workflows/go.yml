@@ -42,8 +42,9 @@ jobs:
 
 
     - name: Error solvinf tests
-      run: echo $GOPATH
-
+      run: |
+        echo $GOPATH
+        sudo echo $GOPATH
 
      # adding go package 
     - name: Install GO package
