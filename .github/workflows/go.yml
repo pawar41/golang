@@ -147,3 +147,15 @@ jobs:
     # Run goroutines-disp.go file
     - name: run goroutines/goroutines-disp.go
       run: go run goroutines/goroutines-disp.go
+      
+
+
+    # Run channels.go file
+    - name: run channels/channels.go
+      run: go run channels/channels.go
+      
+
+
+    # Run channels-channels.go file
+    - name: run channels/channels-goroutines.go
+      run: go run channels/channels-goroutines.go
