@@ -61,6 +61,10 @@ jobs:
             cd $HOME/work/golang/golang
       
         # adding go package 
+      - name: Install GO package
+        run: go list
+        
+        # adding go package 
       - name: Go Programs Input-output
         run: |
           PROJECT_FILES=$HOME/work/golang/golang
