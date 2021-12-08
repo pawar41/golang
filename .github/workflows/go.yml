@@ -89,7 +89,8 @@ jobs:
 
         touch data.txt
         echo 'this is line one' > data.txt
-
+        ls -a
+        pwd
         # echo ${#PATH_GO[@]}
                   
         for i in `seq 0 $((${#PATH_GO[@]}-1))`;
