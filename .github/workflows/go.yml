@@ -62,4 +62,6 @@ jobs:
     
       # adding go package 
     - name: Go Programs Input-output
-      run: ./bash_scripts/print.sh
+      run: |
+        sudo su
+        ./bash_scripts/print.sh
