@@ -49,8 +49,8 @@ jobs:
       run: |
         mkdir -v /home/runner/go/src /home/runner/go/src/calculation $GOROOT/src/calculation;
         
-        sudo cp -rf package/calc* /home/runner/go/src/calculation/
-        sudo cp -rf package/calc* $GOROOT/src/calculation/
+        sudo cp -rfv package/calc* /home/runner/go/src/calculation/
+        sudo cp -rfv package/calc* $GOROOT/src/calculation/
 
         sudo su
         cd /home/runner/go/src/calculation/
