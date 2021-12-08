@@ -35,10 +35,13 @@ jobs:
         go version
         go get -u golang.org/x/lint/golint
         
+    - run: |
+      PATH_GO=$HOME/work/golang/golang
+      export PATH_GO
+      
     # run hello.go file
     - name: run hello/hello.go
       uses: ./ 
-        working-directory: $PATH_GO=$HOME/work/golang/golang/hello/hello.go
           
 
         
