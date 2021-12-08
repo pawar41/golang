@@ -108,7 +108,18 @@ jobs:
       
 
 
-    # Run defer.go file
+    # Run stacking-defer.go file
     - name: run defer/stacking-defer.go
       run: go run defer/stacking-defer.go
+      
 
+
+    # Run pointers-&.go file
+    - name: run pointers/pointers-&.go
+      run: go run run pointers/pointers-&.go
+      
+
+
+    # Run pointers-*.go file
+    - name: run pointers/pointers-*.go
+      run: go run pointers/pointers-*.go
