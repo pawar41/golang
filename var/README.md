@@ -1,7 +1,7 @@
 
 # var.go
 ## run program : 
-- go to folder **hello** ( inside **terminal** ) 
+- go to folder **var** ( inside **terminal** ) 
 
        cd var/
 
