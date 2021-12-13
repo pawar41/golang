@@ -9,7 +9,7 @@ Not anymore ! We are going on wonderful ride
 
 
 #
-![Logo](https://miro.medium.com/max/2000/1*8bPiDNL1K1ZdK9O_T5IVKw.png)
+![Logo](https://go.dev/images/gophers/motorcycle.svg)
 
 ## steps
 
