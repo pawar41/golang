@@ -130,6 +130,107 @@ Not anymore ! We are going on wonderful ride
     ![screen-shot](https://live.staticflickr.com/65535/51736266210_b3b1bc594a_k.jpg)
 - recommended to actually type code ( **learn from mistakes** ).
 #
+
+## Cheat Sheet
+
+| Topic             | Description                                    | Syntax                |
+| :---              |     :---                                       |          :---         |
+|||||
+| **Basic types**   | Numeric, string, bool                          |        - - -          |
+|||||
+| **Variables**     | Declare and assign values to variables         | var variable_name type|
+|                   |                                                | var variable_name type = value, 
+|                   |                                                | var variable_name1, variable_name2 = 
+|                   |                                                | value1, value2, 
+|                   |                                                | variable_name := value
+|||||
+| **Constants** 	| Variables whose value cannot be changed 	     | const variable = value |
+|                   | once assigned                                  |
+|||||
+| **For Loop** 	    | Execute statements in a loop. 	             | for initialisation_expression; 
+|                   |                                                | evaluation_expression; 
+|                   |                                                | iteration_expression{
+|                   |                                                | // one or more statement
+|                   |                                                | }
+|||||
+| **If else** 	    | It is a conditional statement 	             | if condition{
+|                   |                                                | // statements_1
+|                   |                                                | }else{
+|                   |                                                | // statements_2
+|                   |                                                | }
+|||||
+| **switch** 	    | Conditional statement with multiple cases 	 | switch expression {
+|                   |                                                | case value_1:
+|                   |                                                | statements_1
+|                   |                                                | case value_2:
+|                   |                                                | statements_2
+|                   |                                                | case value_n:
+|                   |                                                | statements_n
+|                   |                                                | default:
+|                   |                                                | statements_default
+|                   |                                                | }
+|||||
+| **Array** 	    | Fixed size named sequence of elements of same  | arrayname := [size] type 
+|                   | type                                           | {value_0,value_1,…,value_size-1}
+|||||
+| **Slice** 	    | Portion or segment of an array 	             | var slice_name [] type = 
+|                   |                                                | array_name[start:end]
+|||||
+| **Functions** 	| Block of statements which performs a specific  | func function_name(parameter_1 type, 
+|                   | task                                           | parameter_n type) return_type {
+|                   |                                                | //statements
+|                   |                                                | }
+|||||
+| **Packages**  	| Are used to organise the code. Increases code  | import package_nam
+|                   | readability and reusability 	                 |
+|||||
+| **Defer** 	    | Defers the execution of a function till the    | defer function_name(parameter_list)
+|                   |containing function finishes execution 	     |
+|||||
+| **Pointers** 	    | Stores the memory address of another variable. | var variable_name *type
+|||||
+| **Structure** 	| User defined datatype which itself contains one| type structname struct {
+|                   | more element of the same or different type     | variable_1 variable_1_type
+|                   |                                                | variable_2 variable_2_type
+|                   |                                                | variable_n variable_n_type
+|                   |                                                | }
+|||||
+| **Methods** 	    | A method is a function with a receiver argument| func (variable variabletype) 
+|                   |                                                | methodName(parameter_list) { }
+|||||
+| **Goroutine** 	| A function which can run concurrently with  	 | go function_name(parameter_list)
+|                   | other functions.                               | 
+|||||
+| **Channel** 	    | Way for functions to communicate with each     | Declare:
+|                   | other. A medium to which one routine places    | ch := make(chan int)
+|                   | data and is accessed by another routine. 	     | Send data to channel:
+|                   |                                                | channel_variable <- variable_name
+|                   |                                                | Receive from channel:
+|                   |                                                | variable_name := <- channel_variable
+|||||
+| **Select**        | Switch statement which works on channels.      | select {
+|                   | The case statements will be a channel operation| case x := <-chan1:
+|                   | When any of the channel is ready with data,    | fmt.Println(x)
+|                   | then the statement associated with that        | case y := <-chan2:
+|                   | case is executed                               | fmt.Println(y) }
+|||||
+| **Mutex**         | Mutex is used when you don’t want to allow a   | mutex.Lock()
+|                   | resource to be accessed by multiple subroutines| //statements
+|                   | at the same time. Mutex has 2 methods– Lock and| mutex.Unlock(). 
+|                   | Unlock                                         |
+|||||
+| **Read files**    | Reads the data and returns a byte sequence.    | Data, err := ioutil.ReadFile(filename) 
+|||||
+| **Write file**    | Writes data to a file                          | l, err := f.WriteString(text_to_write) 
+
+
+
+
+
+
+
+#
+
 ## Acknowledgements
 
 - project **begin** : **6**-**Dec**-20**21**
