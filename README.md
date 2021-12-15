@@ -1,3 +1,101 @@
+### index
+
+ - [setup steps](#setup-steps)
+   1. [setup steps](#install-go)
+      - [install Go ( Windows )](#windows)
+      - [install Go ( Ubuntu / Linux )](#ubuntu-or-linux)
+   2. [Download Repository](#download-repository)
+   3. [Run Go Programs](#run-go-programs)
+- [things to note](#things-to-note)
+- [cheat sheet](#cheat-sheet)
+- [Acknowledgements](#acknowledgements)
+- [Authors](#authors)
+
+### program list
+
+1. [hello.go](https://github.com/pawar41/golang/tree/main/hello)
+2. [var.go](https://github.com/pawar41/golang/tree/main/var) 
+3. [for.go](https://github.com/pawar41/golang/tree/main/for)
+4. [if-else.go](https://github.com/pawar41/golang/tree/main/if-else)
+5. [switch-case.go](https://github.com/pawar41/golang/tree/main/switch-case) 
+6. [array.go](https://github.com/pawar41/golang/tree/main/array)
+7. [slice.go](https://github.com/pawar41/golang/tree/main/slice)
+8. [slice-size.go](https://github.com/pawar41/golang/tree/main/slice)
+9. [setup steps](#setup-steps)
+10. [setup steps](#setup-steps)
+11. [setup steps](#setup-steps)
+12. [setup steps](#setup-steps)
+13. [setup steps](#setup-steps)
+14. [setup steps](#setup-steps)
+15. [setup steps](#setup-steps)
+16. [setup steps](#setup-steps)
+17. [setup steps](#setup-steps)
+18. [setup steps](#setup-steps)
+19. [setup steps](#setup-steps)
+20. [setup steps](#setup-steps)
+21. [setup steps](#setup-steps)
+22. [setup steps](#setup-steps)
+23. [setup steps](#setup-steps)
+24. [setup steps](#setup-steps)
+25. cfdc
+          
+ $PROJECT_FILES/function/
+ function.go 
+ 
+ $PROJECT_FILES/defer/
+ defer.go 
+ 
+ $PROJECT_FILES/defer/
+ stacking-defer.go 
+ 
+ $PROJECT_FILES/pointers/
+ pointers.go 
+ 
+ $PROJECT_FILES/pointers/
+ pointers-ast.go 
+ 
+ $PROJECT_FILES/structures/
+ structures.go 
+ 
+ $PROJECT_FILES/methods/
+ methods.go 
+ 
+ $PROJECT_FILES/goroutines/
+ goroutines.go 
+ 
+ $PROJECT_FILES/goroutines/
+ goroutines-disp.go 
+ 
+ $PROJECT_FILES/channels/
+ channels.go 
+ 
+ $PROJECT_FILES/channels/
+ channels-goroutines.go 
+ 
+ $PROJECT_FILES/select/
+ select.go
+ 
+ $PROJECT_FILES/select/
+ select-default.go 
+ 
+ $PROJECT_FILES/mutex/
+ mutex.go 
+ 
+ $PROJECT_FILES/mutex/
+ mutex-goroutines.go 
+ 
+ $PROJECT_FILES/error/
+ error.go 
+ 
+ $PROJECT_FILES/error/
+ error-custom.go 
+ 
+ $PROJECT_FILES/read-write/
+ read.go 
+ 
+ $PROJECT_FILES/read-write/
+ write.go 
+          
 
 # Golang beginner guide
 
@@ -11,7 +109,7 @@ Not anymore ! We are going on wonderful ride
 #
 ![Logo](https://go.dev/images/gophers/motorcycle.svg)
 
-## steps
+# setup steps
 
 - ### install GO
  
@@ -51,7 +149,7 @@ Not anymore ! We are going on wonderful ride
         #
         #
     
-    #### Ubuntu / Linux
+    #### Ubuntu or Linux
     - Go to https://golang.org/dl/. **Download** the binary for your OS.
 
         ![images](https://live.staticflickr.com/65535/51735745233_1f8b8f4ff4_z.jpg)
@@ -115,7 +213,7 @@ Not anymore ! We are going on wonderful ride
     ```
 
 #
-## things to note :
+## things to note
 - each folder has a **name.go** file.
     **Go** files can be executed:
 
